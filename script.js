@@ -1,5 +1,4 @@
 const display = document.getElementById('display');
-const historyList = document.getElementById('historyList');
 
 function appendValue(value) {
   display.value += value;
