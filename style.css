@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+body {
+  background-color: #ffe6f2;
+  font-family: 'Bubblegum Sans', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: #ff1493;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.calculator {
+  background-color: #ffb6c1;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 2rem;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+.clear {
+  grid-column: span 4;
+  background-color: #000;
+}
+
+.clear:hover {
+  background-color: #333;
+}
+
+.history {
+  background-color: #ffcce0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 180px;
+  height: 300px;
+  overflow-y: auto;
+  color: #333;
+}
+
+.history h2 {
+  color: #ff1493;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.history-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
