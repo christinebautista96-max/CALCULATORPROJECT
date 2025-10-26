@@ -24,3 +24,4 @@ function addToHistory(entry) {
   item.textContent = entry;
   historyList.prepend(item);
 }
+
